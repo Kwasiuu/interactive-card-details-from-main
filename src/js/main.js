@@ -1,0 +1,1 @@
+const cvcOnCard = document.querySelector

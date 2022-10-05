@@ -17,95 +17,103 @@
 
 <body>
 
+  <div class="container">
 
-  
-  <div class="bg-gradient">
-    
-    <div class="bg-gradient__card-img">
+    <div class="bg-gradient">
 
-      <img src="images/bg-main-mobile.png" alt="" class="bg-gradient__bg-img-mobile">
-      <img src="images/bg-main-desktop.png" alt="" class="bg-gradient__bg-img-desktop">
+      <div class="bg-gradient__card-img">
+
+        <img src="images/bg-main-mobile.png" alt="" class="bg-gradient__bg-img-mobile">
+        <img src="images/bg-main-desktop.png" alt="" class="bg-gradient__bg-img-desktop">
 
 
-      <div class="bg-gradient__back-card">
-        <div class="bg-gradient__back-card-img">
-          <img src="images/bg-card-back.png" alt="" class="bg-gradient__image-back-card">
-          <div class="bg-gradient__cvc">000</div>
+        <div class="bg-gradient__back-card">
+          <div class="bg-gradient__back-card-img">
+            <img src="images/bg-card-back.png" alt="" class="bg-gradient__image-back-card">
+            <div class="bg-gradient__cvc">000</div>
+          </div>
+        </div>
+
+        <div class="bg-gradient__card">
+
+          <img src="images/bg-card-front.png" class="bg-gradient__image-card" alt="">
+
+          <div class="bg-gradient__logo"><img src="images/card-logo.svg" alt="logo" class="bg-gradient__logo-svg"></div>
+          <div class="bg-gradient__number-card">0000 0000 0000 0000</div>
+          <div class="bg-gradient__name-on-card">Jane Appleseed</div>
+          <div class="bg-gradient__date-on-card">00/00</div>
+
         </div>
       </div>
 
-      <div class="bg-gradient__card">
 
-        <img src="images/bg-card-front.png" class="bg-gradient__image-card" alt="">
-                           
-        <div class="bg-gradient__logo"><img src="images/card-logo.svg" alt="logo" class="bg-gradient__logo-svg"></div>
-        <div class="bg-gradient__number-card">0000 0000 0000 0000</div>
-        <div class="bg-gradient__name-on-card">Jane Appleseed</div>
-        <div class="bg-gradient__date-on-card">00/00</div> 
+    </div>
 
+
+    <div class="form">
+
+      <form>
+
+        <label for="cardholder">card holder name</label>
+        <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed">
+        <p class="form__warn-card-cardholder form__warn hide">Wrong format</p>
+        <label for="carnumber">card number</label>
+        <input type="number" id="cardnumber" placeholder="e.g. 1234 5670 9123 0000">
+        <p class="form__warn-card-number form__warn hide">Wrong format, numbers only</p>
+
+
+        <div class="form__input-and-date">
+
+          <div class="form__input-date">
+            <label for="date">exp. date (mm/yy)</label>
+
+            <div class="form__two-input-date">
+              <input type="number" placeholder="MM">
+              <input type="number" placeholder="YY">
+            </div>
+
+            <p class="form__warn-date form__warn hide">Wrong format, numbers only</p>
+          </div>
+
+          <div class="form__input-cvc">
+            <label for="cvc">cvc</label>
+            <input type="number" placeholder="e.g. 123" class="error-input">
+
+            <p class="form__warn-cvc form__warn hide">Wrong format, numbers only</p>
+          </div>
+
+        </div>
+
+      </form>
+
+      <button class="form__button">Confirm</button>
+
+
+      <!-- Completed state start -->
+
+
+      <div class="completed hide">
+        <div class="completed__img"><img src="images/icon-complete.svg" alt="completed"></div>
+
+        <h3>thank you!</h3>
+        <p>We've added your card details</p>
+
+        <button class="completed__button">Continue</button>
       </div>
     </div>
 
 
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/Kwasiuu">Kwasiuu</a>.
   </div>
 
 
-  <div class="form">
-
-    <form>
-
-      <label for="cardholder">card holder name</label> 
-      <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed">
-      <p class="form__warn-card-cardholder-format hide">Wrong format</p>
-      <p class="form__warn-card-cardholder-blank hide">Can't be blank</p>
-      <label for="carnumber">card number</label>
-      <input type="text" id="cardnumber" placeholder="e.g. 1234 5670 9123 0000">
-      <p class="form__warn-card-number-format hide">Wrong format, numbers only</p>
-      <p class="form__warn-card-number-blank hide">Can't be blank</p>
-
-      <div class="form__input-date">
-        <label for="date">exp. date (mm/yy)</label>
-        <input type="number" placeholder="MM" min="1" maxvalue="12">
-        <input type="number" placeholder="YY">
-
-        <p class="form__warn-date-format hide">Wrong format, numbers only</p>
-        <p class="form__warn-date-blank hide">Can't be blank</p>
-      </div>
-
-      <div class="form__input-cvc">
-        <label for="cvc">cvc</label>
-        <input type="number" placeholder="e.g. 123">
-
-        <p class="form__warn-cvc-format hide">Wrong format, numbers only</p>
-        <p class="form__warn-cvc-blank hide">Can't be blank</p>
-      </div>
-
-    </form>
-
-    <button class="form__button">Confirm</button>
-  </div>
-
-
-
-
-    <!-- Completed state start -->
-
-
-    <!-- <div class="completed hide">
-      <div class="completed__img"><img src="images/icon-complete.svg" alt="completed"></div>
-
-      <h3>thank you</h3>
-      <p>We've added your card details</p>
-
-      <button class="completed__button">Continue</button>
-    </div>
-
-
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+  <script src="dist/js/main.min.js"></script>
 
 </body>
 
