@@ -41,7 +41,7 @@
           <div class="bg-gradient__logo"><img src="images/card-logo.svg" alt="logo" class="bg-gradient__logo-svg"></div>
           <div class="bg-gradient__number-card">0000 0000 0000 0000</div>
           <div class="bg-gradient__name-on-card">Jane Appleseed</div>
-          <div class="bg-gradient__date-on-card">00/00</div>
+          <div class="bg-gradient__date-on-card"><p class="month">00</p><p>/</p><p class="year">00</p></div>
 
         </div>
       </div>
@@ -56,10 +56,10 @@
 
         <label for="cardholder">card holder name</label>
         <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed">
-        <p class="form__warn-card-cardholder form__warn hide">Wrong format</p>
+        <p class="form__warn-card-cardholder form__warn hide">Can't be blank!</p>
         <label for="carnumber">card number</label>
-        <input type="number" id="cardnumber" placeholder="e.g. 1234 5670 9123 0000">
-        <p class="form__warn-card-number form__warn hide">Wrong format, numbers only</p>
+        <input type="text" id="cardnumber" maxlength="19" placeholder="e.g. 1234 5670 9123 0000">
+        <p class="form__warn-card-number form__warn hide">Can't be blank!</p>
 
 
         <div class="form__input-and-date">
@@ -68,31 +68,31 @@
             <label for="date">exp. date (mm/yy)</label>
 
             <div class="form__two-input-date">
-              <input type="number" placeholder="MM">
-              <input type="number" placeholder="YY">
+              <input type="number" placeholder="MM" id="mm">
+              <input type="number" placeholder="YY" id="yy">
             </div>
 
-            <p class="form__warn-date form__warn hide">Wrong format, numbers only</p>
+            <p class="form__warn-date form__warn hide">can't be blank!</p>
           </div>
 
           <div class="form__input-cvc">
             <label for="cvc">cvc</label>
-            <input type="number" placeholder="e.g. 123" class="error-input">
+            <input type="number" placeholder="e.g. 123" class="error-input" id="cvc">
 
-            <p class="form__warn-cvc form__warn hide">Wrong format, numbers only</p>
+            <p class="form__warn-cvc form__warn hide">Can't be blank!</p>
           </div>
 
         </div>
 
+        <button class="form__button" type="button">Confirm</button>
       </form>
-
-      <button class="form__button">Confirm</button>
+      
 
 
       <!-- Completed state start -->
 
 
-      <div class="completed hide">
+      <div class="completed hide-popup">
         <div class="completed__img"><img src="images/icon-complete.svg" alt="completed"></div>
 
         <h3>thank you!</h3>
