@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ([https://your-live-site-url.com](https://kwasiuu.github.io/interactive-card-details-from-main/))
+- Live Site URL: (site](https://kwasiuu.github.io/interactive-card-details-from-main/))
 
 ## My process
 
