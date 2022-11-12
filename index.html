@@ -48,6 +48,7 @@
 
 
     </div>
+    
 
 
     <div class="form">
@@ -55,12 +56,11 @@
       <form>
 
         <label for="cardholder">card holder name</label>
-        <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed">
-        <p class="form__warn-card-cardholder form__warn hide">Can't be blank!</p>
+        <input type="text" id="cardholder" class="input" placeholder="e.g. Jane Appleseed">
+        <p class="form__warn-card-cardholder form__warn ">Can't be blank!</p>
         <label for="carnumber">card number</label>
-        <input type="text" id="cardnumber" maxlength="19" placeholder="e.g. 1234 5670 9123 0000">
-        <p class="form__warn-card-number form__warn hide">Can't be blank!</p>
-
+        <input type="text" id="cardnumber" class="input" maxlength="19" placeholder="e.g. 1234 5670 9123 0000">
+        <p class="form__warn-card-number form__warn ">Can't be blank!</p>
 
         <div class="form__input-and-date">
 
@@ -68,18 +68,17 @@
             <label for="date">exp. date (mm/yy)</label>
 
             <div class="form__two-input-date">
-              <input type="number" placeholder="MM" id="mm">
-              <input type="number" placeholder="YY" id="yy">
+              <input type="number" class="input" placeholder="MM" id="mm"> 
+              <p class="form__warn-month form__warn ">Can't be blank!</p>
+              <input type="number" class="input" placeholder="YY" id="yy">
+              <p class="form__warn-year form__warn ">Can't be blank!</p>
             </div>
-
-            <p class="form__warn-date form__warn hide">can't be blank!</p>
           </div>
 
           <div class="form__input-cvc">
             <label for="cvc">cvc</label>
-            <input type="number" placeholder="e.g. 123" class="error-input" id="cvc">
-
-            <p class="form__warn-cvc form__warn hide">Can't be blank!</p>
+            <input type="number" class="input" placeholder="e.g. 123" class="error-input" id="cvc">
+            <p class="form__warn-cvc form__warn ">Can't be blank!</p>
           </div>
 
         </div>
@@ -92,7 +91,7 @@
       <!-- Completed state start -->
 
 
-      <div class="completed hide-popup">
+      <div class="completed">
         <div class="completed__img"><img src="images/icon-complete.svg" alt="completed"></div>
 
         <h3>thank you!</h3>
